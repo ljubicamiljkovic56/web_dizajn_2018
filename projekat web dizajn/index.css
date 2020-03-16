@@ -1,0 +1,19 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+.footer {
+    background-color: #990000;
+    padding: 1px 1px;  
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.footer-text {
+    color: white;
+    text-align: right;
+    
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aviokompanije</title>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="aviokompanije.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body style="background-image: url(slike/air.jpg);">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #990000;">
+                    <image>
+                        <i class="fas fa-plane-departure"></i>
+                    </image>
+                    <a href="#" class="navbar-brand">Avio Servis</a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Početna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="letovi.html" class="nav-link">Letovi</a>
+                        </li>
+                        <li>
+                            <a href="aviokompanije.html" class="nav-link">Aviokompanije</a>
+                        </li>
+                        <li>
+                            <a href="rezervacija.html" class="nav-link">Rezerviši/kupi kartu</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">
+                                Korisnik
+                                <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="registracija.html">Registracija</a>
+                                <a class="dropdown-item" href="login.html" target="_blank">Login</a>
+                                <a class="dropdown-item" href="dodavanje.html">Admin</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="o nama.html" class="nav-link">O nama</a>
+                        </li>
+                        <li>
+                            <a href="kontakt.html" class="nav-link">Kontakt</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pretraga" aria-label="Search">
+                        <a href="pretraga.html" class="btn btn-success" id="btn_search">
+                            <i class="fas fa-search"></i>Pretraga
+                        </a>
+                        <button type="button" class="btn btn-danger" id="btn_clear">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <form>
+                <main class="clearfix">
+                    <img src="slike/airserbia.jpg" alt="Air Serbia">
+                    <div id="tekst1">
+                        <h3><b>Air Serbia</b></h3>
+                        <p>Air Serbia je avioprevoznik Srbije. 
+                            Sedište kompanije nalazi se u Beogradu, Srbija, 
+                            a glavno čvorište je Aerodrom Nikola Tesla Beograd.
+                            Od nedavno sarađuje sa aviokompanijom Air Asia, što znači da 
+                            će putnici iz Srbije moći da putuju sigurno i udobno do
+                            Singapura, Japana, Kine ili Malezije.
+
+                        </p>
+                    </div>
+                </main>
+                <main class="clearfix">
+                    <img src="slike/airasia.jpg" alt="Air Asia">
+                    <div id="tekst2">
+                        <h3><b>Air Asia</b></h3>
+                        <p>AirAsia je malezijska niskotarifna avio kompanija 
+                            sa sedištem u blizini Kuala Lumpura, Malezija. 
+                            To je najveća aviokompanija u Maleziji po veličini 
+                            flote i destinacijama. AirAsia Group vrši redovne letove u 
+                            zemlji i inostranstvu u više od 165 destinacija u 25 zemalja.
+                            Sada vrši i prevoz putnika iz Srbije do raznih azijskih 
+                            destinacija po povoljnim cenama.
+                        </p>
+                    </div>
+                </main>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="footer">
+                    <p class="footer-text">Copyright 2018/2019 &copy; Lj.M.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upravljanje korisnicima</title>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/korisnici.js"></script>
+    <link rel="stylesheet" href="korisnici.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+</head>
+<body style="background-image: url(slike/air.jpg);">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #990000;">
+                    <image>
+                        <i class="fas fa-plane-departure"></i>
+                    </image>
+                    <a href="#" class="navbar-brand">Avio Servis</a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Početna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="letovi.html" class="nav-link">Letovi</a>
+                        </li>
+                        <li>
+                            <a href="aviokompanije.html" class="nav-link">Aviokompanije</a>
+                        </li>
+                        <li>
+                            <a href="rezervacija.html" class="nav-link">Rezerviši/kupi kartu</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">
+                                Korisnik
+                                <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="registracija.html">Registracija</a>
+                                <a class="dropdown-item" href="login.html" target="_blank">Login</a>
+                                <a class="dropdown-item" href="dodavanje.html">Admin</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="o nama.html" class="nav-link">O nama</a>
+                        </li>
+                        <li>
+                            <a href="kontakt.html" class="nav-link">Kontakt</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pretraga" aria-label="Search">
+                        <a href="pretraga.html" class="btn btn-success" id="btn_search">
+                            <i class="fas fa-search"></i>Pretraga
+                        </a>
+                        <button type="button" class="btn btn-danger" id="btn_clear">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <form action="">
+                <table id="myTable">
+                    <tr class="header">
+                        <th>Redni broj</th>
+                        <th>Korisničko ime</th>
+                        <th>Lozinka</th>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td contenteditable="true">Sincere@april.biz</td>
+                        <td contenteditable="true">Bret</td>
+                        <td contenteditable="true">Leanne</td>
+                        <td contenteditable="true">Graham</td>
+                        <td>
+                            <button class="btn btn-danger" onclick="klik()">Obriši</button>
+                        </td>
+                        <td>
+                            <a href="korisnik1.html" class="btn btn-success">Profil korisnika</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td contenteditable="true">Shanna@melissa.tv</td>
+                        <td contenteditable="true">Antonette</td>
+                        <td contenteditable="true">Ervin</td>
+                        <td contenteditable="true">Howell</td>
+                        <td>
+                            <button class="btn btn-danger" onclick="klik()">Obriši</button>
+                        </td>
+                        <td>
+                            <a href="korisnik2.html" class="btn btn-success">Profil korisnika</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td contenteditable="true">Nathan@yesenia.net</td>
+                        <td contenteditable="true">Samantha</td>
+                        <td contenteditable="true">Clementine</td>
+                        <td contenteditable="true">Bauch</td>
+                        <td>
+                            <button class="btn btn-danger" onclick="klik()">Obriši</button>
+                        </td>
+                        <td>
+                            <a href="korisnik3.html" class="btn btn-success">Profil korisnika</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td contenteditable="true">Julianne.OConner@kory.org</td>
+                        <td contenteditable="true">Karianne</td>
+                        <td contenteditable="true">Patricia</td>
+                        <td contenteditable="true">Lebsack</td>
+                        <td>
+                            <button class="btn btn-danger" onclick="klik()">Obriši</button>
+                        </td>
+                        <td>
+                            <a href="korisnik4.html" class="btn btn-success">Profil korisnika</a>
+                        </td>
+                    </tr>
+                </table>
+                <a href="dodavanje.html" class="btn btn-success">
+                    << Letovi
+                </a>
+            </form>
+        </div>
+        <div class="row fixed-bottom">
+            <div class="col-12">
+                <div class="footer">
+                    <p class="footer-text">Copyright 2018/2019 &copy; Lj.M.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
